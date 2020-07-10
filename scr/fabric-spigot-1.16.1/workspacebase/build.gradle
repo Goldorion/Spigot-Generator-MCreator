@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'com.yourname.modid'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://hub.spigotmc.org/nexus/content/repositories/snapshots"
+    }
+}
+
+task fatJar(type: Jar) {
+    destinationDir = file(System.getProperty("user.dir"))
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    compileOnly "org.spigotmc:spigot-api:1.16.1-R0.1-SNAPSHOT"
+}
