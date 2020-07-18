@@ -14,7 +14,7 @@ build
 *.iml
 .idea
 
-# Mac OS Garbage    
+# Mac OS Garbage
 .DS_Store
 
 # VSCode

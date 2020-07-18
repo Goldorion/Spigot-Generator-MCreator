@@ -9,13 +9,11 @@ gradle:
 
 source_root: "@WORKSPACEROOT/src/main/java"
 res_root: "@WORKSPACEROOT/src/main/resources"
-mod_assets_root: "@RESROOT/assets/@modid"
-mod_data_root: "@RESROOT/data/@modid"
 
 base_templates:
 - template: modbase/mod.java.ftl
   name: "@SRCROOT/@BASEPACKAGEPATH/@JavaModName.java"
   canLock: true
 - template: modbase/plugin.yml.ftl
-  name: "@SRCROOT/plugin.yml"
+  name: "@RESROOT/plugin.yml"
   canLock: true
