@@ -21,7 +21,9 @@ public class ${JavaModName} extends JavaPlugin {
   @Override
   public void onEnable()
   {
-
+    <#list w.getElementsOfType("COMMAND") as command>
+    this.getCommand("${command}").setExecutor(new ${command}());
+    </#list>
   }
 
   @Override
@@ -29,6 +31,5 @@ public class ${JavaModName} extends JavaPlugin {
   {
 
   }
-
 }
 <#-- @formatter:on -->

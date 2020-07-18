@@ -6,20 +6,11 @@ group 'com.yourname.modid'
 version '1.0'
 
 repositories {
+    mavenLocal()
     mavenCentral()
     maven {
         url "https://hub.spigotmc.org/nexus/content/repositories/snapshots"
     }
-}
-
-task fatJar(type: Jar) {
-    destinationDir = file(System.getProperty("user.dir"))
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
-    with jar
-}
-
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
 }
 
 dependencies {
