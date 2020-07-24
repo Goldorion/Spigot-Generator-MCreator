@@ -9,22 +9,17 @@ public class ${name} implements CommandExecutor
 {
 
 	@Override
-	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
+	public boolean onCommand(CommandSender entity, Command cmd, String label, String[] args)
 	{
 		if(label.equalsIgnoreCase("${data.commandName}"))
 		{
-			<#if hasProcedure(data.onCommandExecuted)>
-			HashMap<String, String> cmdparams = new HashMap<>();
-			int[] index = { -1 };
-			Arrays.stream(ctx.getInput().split("\\s+")).forEach(param -> {
-				if(index[0] >= 0)
-					cmdparams.put(Integer.toString(index[0]), param);
-				index[0]++;
-			});
+			if(entity.hasPermission("${data.commandName}.use"))
 
-			<@procedureOBJToCode data.onCommandExecuted/>
-			</#if>
-			return true;
+					{
+						<@procedureOBJToCode data.onCommandExecuted/>
+
+					return true;
+				}
 		}
 		return false;
 	}
