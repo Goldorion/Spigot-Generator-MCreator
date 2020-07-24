@@ -15,5 +15,6 @@ base_templates:
   name: "@SRCROOT/@BASEPACKAGEPATH/@JavaModName.java"
   canLock: true
 - template: modbase/plugin.yml.ftl
+  writer: file
   name: "@RESROOT/plugin.yml"
   canLock: true
