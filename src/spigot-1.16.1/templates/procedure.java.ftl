@@ -3,13 +3,11 @@ package ${package}.procedures;
 
 import org.bukkit.entity.Entity;
 
-public class ${name}Procedure
-{
+public class ${name}Procedure <#if has_trigger>implements org.bukkit.event.Listener</#if> {
 
-	public static <#if return_type??>${return_type.getJavaType(generator.getWorkspace())}<#else>void</#if> executeProcedure(Map<String, Object> dependencies)
-	{
+	public static <#if return_type??>${return_type.getJavaType(generator.getWorkspace())}<#else>void</#if> executeProcedure(Map<String, Object> dependencies){
 		<#list dependencies as dependency>
-		if(dependencies.get("${dependency.getName()}") == null){
+		if(dependencies.get("${dependency.getName()}")==null){
 			System.err.println("Failed to load dependency ${dependency.getName()} for procedure ${name}!");
 			<#if return_type??>return ${return_type.getDefaultValue(generator.getWorkspace())}<#else>return</#if>;
 		}
@@ -20,9 +18,9 @@ public class ${name}Procedure
 				double ${dependency.getName()} = dependencies.get("${dependency.getName()}") instanceof Integer
 					? (int) dependencies.get("${dependency.getName()}") : (double) dependencies.get("${dependency.getName()}");
 			<#else>
-				${dependency.getType(generator.getWorkspace())} ${dependency.getName()} = (${dependency.getType(generator.getWorkspace())}) dependencies.get("${dependency.getName()}");
+            	${dependency.getType(generator.getWorkspace())} ${dependency.getName()} = (${dependency.getType(generator.getWorkspace())}) dependencies.get("${dependency.getName()}");
 			</#if>
-		</#list>
+        </#list>
 
 		${procedurecode}
 

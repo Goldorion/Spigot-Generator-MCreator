@@ -1,0 +1,1 @@
+world.createExplosion(${input$x}, ${input$y}, ${input$z} ,(float) ${input$power});
