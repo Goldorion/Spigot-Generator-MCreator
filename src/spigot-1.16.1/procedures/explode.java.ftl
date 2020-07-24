@@ -1,1 +1,1 @@
-world.createExplosion(${input$x}, ${input$y}, ${input$z} ,(float) ${input$power});
+world.createExplosion(entity.getLocation().getX(), entity.getLocation().getY(), entity.getLocation().getZ(), (float) ${input$power});

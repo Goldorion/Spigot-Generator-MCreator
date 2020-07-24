@@ -14,22 +14,23 @@ public class ${name} implements CommandExecutor
 	{
 		if(label.equalsIgnoreCase("${data.commandName}"))
 		{
-			World world = sender.getServer().getWorld(sender.getName());
+			Player player = (Player) sender;
+			World world = player.getWorld();
 
 			double x = 0;
 			double y = 0;
 			double z = 0;
-			
+
 			Entity entity = null;
-			
+
 			if (sender instanceof Entity) {
 				entity = (Entity) sender;
-				
+
 				x = entity.getLocation().getX();
 				y = entity.getLocation().getX();
 				z = entity.getLocation().getX();
 			}
-		
+
 			<#if hasProcedure(data.onCommandExecuted)>
 			HashMap<String, String> cmdparams = new HashMap<>();
 			int[] index = { -1 };

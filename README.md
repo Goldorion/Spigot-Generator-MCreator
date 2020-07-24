@@ -5,7 +5,8 @@ An unofficial plugin for [MCreator](https://mcreator.net/), a code generator to 
 This project is not official. It is not affiliated with the respective owners and maintainers of Spigot/Bukkit, Minecraft, or MCreator. Do not expect any official support from their communities.
 
 ## Features
-* Commands (Procedures don't work)
+* Commands
+* [Procedures](https://github.com/Goldorion/MCreatorSpigotGenerator/blob/1.16.1/PROCEDURES.md)
 
 ## Downloads/Install Instructions
 Downloads can be found on the [Release page of this repo](https://github.com/Goldorion/MCreatorSpigotGenerator/releases).
@@ -26,8 +27,9 @@ Install like any other plugin: Launch MCreator -> Open preferences -> Manage plu
 ## Credits/License
 
 Lead Dev - Goldorion
+Contributors: Klemen
 
-Licensed under the GNU Lesser General Public License, version 3.0  
+Licensed under the GNU Lesser General Public License, version 2.1  
 * Plugins created with this tool may be closed source and/or be distributed with a different license.
 * Appropriate credit must be provided to the creators and maintainers of this software.
 * Forked versions of this software must be distributed under the same license as this with attribution, if distributed.
