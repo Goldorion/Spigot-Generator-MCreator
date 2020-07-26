@@ -2,10 +2,12 @@ name: Minecraft Spigot for 1.16.1
 basefeatures: []
 partial_support: []
 status: dev
-buildfileversion: 1.0.1
+buildfileversion: 1.1.0
 
 gradle:
   export_file: "build/libs/plugin.jar"
+  run_server: runSpigotServer
+  setup_task: "dependencies buildLatestSpigot --refresh-dependencies"
 
 source_root: "@WORKSPACEROOT/src/main/java"
 res_root: "@WORKSPACEROOT/src/main/resources"
