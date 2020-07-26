@@ -22,7 +22,11 @@ public class ${JavaModName} extends JavaPlugin {
   public void onEnable()
   {
     <#list w.getElementsOfType("COMMAND") as command>
-    this.getCommand("${command}").setExecutor(new ${command}());
+		this.getCommand("${command}").setExecutor(new ${command}());
+    </#list>
+	
+	<#list w.getElementsOfType("PROCEDURE") as procedure>
+		getServer().getPluginManager().registerEvents(new ${procedure.getName()}Procedure(), this);
     </#list>
   }
 

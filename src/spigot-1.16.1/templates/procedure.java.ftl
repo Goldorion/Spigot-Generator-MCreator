@@ -3,7 +3,7 @@ package ${package}.procedures;
 
 import org.bukkit.entity.Entity;
 
-public class ${name}Procedure <#if has_trigger>implements org.bukkit.event.Listener</#if> {
+public class ${name}Procedure implements org.bukkit.event.Listener {
 
 	public static <#if return_type??>${return_type.getJavaType(generator.getWorkspace())}<#else>void</#if> executeProcedure(Map<String, Object> dependencies){
 		<#list dependencies as dependency>
