@@ -17,6 +17,9 @@ public class ${name}Procedure <#if has_trigger>implements org.bukkit.event.Liste
 			<#if dependency.getType(generator.getWorkspace()) == "double">
 				double ${dependency.getName()} = dependencies.get("${dependency.getName()}") instanceof Integer
 					? (int) dependencies.get("${dependency.getName()}") : (double) dependencies.get("${dependency.getName()}");
+			<#elseif dependency.getType(generator.getWorkspace()) == "Entity">
+			${dependency.getType(generator.getWorkspace())} ${dependency.getName()} = (${dependency.getType(generator.getWorkspace())}) dependencies.get("${dependency.getName()}");
+			org.bukkit.entity.Player player = (Player) entity;
 			<#else>
             	${dependency.getType(generator.getWorkspace())} ${dependency.getName()} = (${dependency.getType(generator.getWorkspace())}) dependencies.get("${dependency.getName()}");
 			</#if>
