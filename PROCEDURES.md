@@ -1,8 +1,15 @@
 This file lists all procedure blocks implemented.
 **Block procedures:**
-- Get block at x y z *Do not work with Compare MCBlock*
 **Entity procedures:**
 - Despawn entity
+- Direction
+- Get height and get width
+- Is entity riding
+- Is entity sprinting **(PLAYERS ONLY)**
+- Make entity fly
+- Override fall distance
+- X, Y and Z positions
+- X, Y and Z velocities
 **Item procedures:**
 **Player procedures:**
 - Get food level
@@ -16,7 +23,6 @@ This file lists all procedure blocks implemented.
 - Explode
 - Set time
 **Logic:**
-- Compare MCBlock
 **Advanced:**
 - Call procedures
 - Call procedure at
@@ -24,6 +30,15 @@ This file lists all procedure blocks implemented.
 **Spigot**
 - Get biome at x y z
 - Get the full in-game time of this world
-- Get the highest non-empty (impassable) block at x z *Do not work with Compare MCBlock*
+- Get the UUID of entity
 - Is hardcore
+- Is entity supported by a block
+- Is the player blocking
+- Is the player gliding
+- Is the player hand raised
+- Is the player op
+- Is the player's time relative to the server's time
+- Is the player using the Riptide enchantment
+- Is the living entity swimming
 - Set difficulty
+- Set entity invulnerable

@@ -19,6 +19,7 @@ public class ${name} implements CommandExecutor
 			double z = 0;
 
 			Entity entity = null;
+
 			World world = null;
 
 			if (sender instanceof Entity) {
@@ -27,13 +28,15 @@ public class ${name} implements CommandExecutor
 				x = entity.getLocation().getX();
 				y = entity.getLocation().getX();
 				z = entity.getLocation().getX();
-				
+
 				world = entity.getWorld();
+
+
 			} else if (sender instanceof BlockCommandSender) {
 				x = ((BlockCommandSender) sender).getBlock().getLocation().getX();
 				y = ((BlockCommandSender) sender).getBlock().getLocation().getX();
 				z = ((BlockCommandSender) sender).getBlock().getLocation().getX();
-				
+
 				world = ((BlockCommandSender) sender).getBlock().getWorld();
 			}
 
