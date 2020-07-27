@@ -1,6 +1,7 @@
 This file lists all procedure blocks implemented.
 **Block procedures:**
 **Entity procedures:**
+- Allow flying **(PLAYERS ONLY)**
 - Current health **(PLAYERS ONLY)**
 - Despawn entity
 - Direction
@@ -14,9 +15,13 @@ This file lists all procedure blocks implemented.
 - X, Y and Z velocities
 **Item procedures:**
 **Player procedures:**
+- Add XP
+- Add XP levels
+- Check gamemode
 - Get food level
 - Get XP levels
 - Send message (not action bar)
+- Set gamemode
 **Slot & GUI procedures:**
 **World data:**
 - Is biome at x y z type
