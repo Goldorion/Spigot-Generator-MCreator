@@ -1,10 +1,10 @@
 This file lists all procedure blocks implemented.
 **Block procedures:**
 **Entity procedures:**
-- Current health ***(PLAYERS ONLY)***
+- Current health **(PLAYERS ONLY)**
 - Despawn entity
 - Direction
-- Get display name ***(PLAYERS ONLY)***
+- Get display name **(PLAYERS ONLY)**
 - Get height and get width
 - Is entity riding
 - Is entity sprinting **(PLAYERS ONLY)**
@@ -24,7 +24,7 @@ This file lists all procedure blocks implemented.
 - Is thundering
 **World management:**
 - Explode
-- Execute command ***(NO COORDINATES)***
+- Execute command **(NO COORDINATES)**
 - Set time
 **Logic:**
 **Advanced:**
@@ -32,7 +32,6 @@ This file lists all procedure blocks implemented.
 - Call procedure at
 - Call procedure and return value
 **Spigot**
-- Get biome at x y z
 - Get the full in-game time of this world
 - Get the UUID of entity
 - Get if the player is allowed to fly like in Creative
