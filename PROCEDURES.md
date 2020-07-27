@@ -1,10 +1,11 @@
 This file lists all procedure blocks implemented.
 **Block procedures:**
 **Entity procedures:**
-- Current health ***(PLAYERS ONLY)***
+- Allow flying **(PLAYERS ONLY)**
+- Current health **(PLAYERS ONLY)**
 - Despawn entity
 - Direction
-- Get display name ***(PLAYERS ONLY)***
+- Get display name **(PLAYERS ONLY)**
 - Get height and get width
 - Is entity riding
 - Is entity sprinting **(PLAYERS ONLY)**
@@ -14,9 +15,13 @@ This file lists all procedure blocks implemented.
 - X, Y and Z velocities
 **Item procedures:**
 **Player procedures:**
+- Add XP
+- Add XP levels
+- Check gamemode
 - Get food level
 - Get XP levels
 - Send message (not action bar)
+- Set gamemode
 **Slot & GUI procedures:**
 **World data:**
 - Is biome at x y z type
@@ -24,15 +29,16 @@ This file lists all procedure blocks implemented.
 - Is thundering
 **World management:**
 - Explode
-- Execute command ***(NO COORDINATES)***
+- Execute command **(NO COORDINATES)**
+- Play sound **(PLAYERS ONLY (Need the entity dependency))**
 - Set time
 **Logic:**
 **Advanced:**
 - Call procedures
 - Call procedure at
 - Call procedure and return value
+- Cancel event
 **Spigot**
-- Get biome at x y z
 - Get the full in-game time of this world
 - Get the UUID of entity
 - Get if the player is allowed to fly like in Creative
@@ -55,5 +61,11 @@ This file lists all procedure blocks implemented.
 - Is the player's time relative to the server's time
 - Is the player using the Riptide enchantment
 - Is the living entity swimming
+- Send title and subtitle to the player
 - Set difficulty
 - Set entity invulnerable
+
+
+**Global triggers:**
+- Block break
+- Player log in
