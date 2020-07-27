@@ -30,12 +30,14 @@ This file lists all procedure blocks implemented.
 **World management:**
 - Explode
 - Execute command **(NO COORDINATES)**
+- Play sound **(PLAYERS ONLY (Need the entity dependency))**
 - Set time
 **Logic:**
 **Advanced:**
 - Call procedures
 - Call procedure at
 - Call procedure and return value
+- Cancel event
 **Spigot**
 - Get the full in-game time of this world
 - Get the UUID of entity
@@ -59,5 +61,11 @@ This file lists all procedure blocks implemented.
 - Is the player's time relative to the server's time
 - Is the player using the Riptide enchantment
 - Is the living entity swimming
+- Send title and subtitle to the player
 - Set difficulty
 - Set entity invulnerable
+
+
+**Global triggers:**
+- Block break
+- Player log in
