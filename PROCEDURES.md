@@ -69,3 +69,7 @@ This file lists all procedure blocks implemented.
 **Global triggers:**
 - Block break
 - Player log in
+- Player in bed
+- Bucket is filled
+- Gem dropped
+- Player respawns
