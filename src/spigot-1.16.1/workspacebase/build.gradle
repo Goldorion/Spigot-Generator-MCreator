@@ -46,7 +46,7 @@ task runSpigotServer (dependsOn: build) {
 		}
 		javaexec { 
 			main = "-jar"
-			args = [ "spigot-1.16.1.jar" ]
+			args = [ "spigot-1.16.2.jar" ]
 			workingDir = "run/"
 		}
 	}
