@@ -1,6 +1,6 @@
 _default: Object
 world: World
-number: double
+int: int
 entity: Entity
 itemstack: ItemStack
 map: HashMap

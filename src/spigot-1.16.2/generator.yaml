@@ -1,8 +1,8 @@
-name: Minecraft Spigot for 1.16.1
+name: Minecraft Spigot for 1.16.2
 basefeatures: []
-partial_support: []
+partial_support: [procedures]
 status: dev
-buildfileversion: 1.1.0
+buildfileversion: 1.0.0-pre5
 
 gradle:
   export_file: "build/libs/plugin.jar"
