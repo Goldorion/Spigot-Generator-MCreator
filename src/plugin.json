@@ -4,8 +4,8 @@
   "maxversion": 202000499999,
   "info": {
     "name": "Minecraft Spigot 1.16.2 Generator",
-    "version": "1.0.0-pre4",
+    "version": "1.0.0-pre5",
     "description": "A Spigot Generator",
-    "author": "Goldorion (1.16 blocks/items by U1timateJ7)"
+    "author": "Goldorion"
   }
 }

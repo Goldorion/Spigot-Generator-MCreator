@@ -15,12 +15,9 @@ The plugin's MCreator forum page is [here](https://mcreator.net/forum/64143/spig
 Install like any other plugin: Launch MCreator -> Open preferences -> Manage plugins -> Load Plugin -> Find your downloaded zip file -> **Restart MCreator**.
 
 ## Important Information
-
-- To use the version 1.0-pre1 of this generator, you need to select it in the Fabric generator flavor.
+- **The plugin requires [ClothCommons](https://github.com/ClothCreators/ClothCommons) to be able to work properly.**
 
 - To use the latest version of the plugin, you need to have the latest version of MCreator, **including snapshots**.
-
-- To get the JAR file, you need to go in your workspace folder then, build/libs and finally, take the JAR file you see. It should be named like modid-1.0.jar.
 
 - Always back up your workspace before updating to a newer version of the plugin.
 
