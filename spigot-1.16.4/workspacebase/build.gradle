@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly "org.spigotmc:spigot-api:1.16.2-R0.1-SNAPSHOT"
+    compileOnly "org.spigotmc:spigot-api:1.16.4-R0.1-SNAPSHOT"
 }
 
 jar {
@@ -27,11 +27,11 @@ task buildLatestSpigot(type: de.undercouch.gradle.tasks.download.Download)  {
 	doLast {
 		javaexec {
 			main = "-jar"
-			args = [ "BuildTools.jar", "--rev", "1.16.2" ]
+			args = [ "BuildTools.jar", "--rev", "1.16.4" ]
 			workingDir = "build/btmp"
 		}
 		copy {
-			from file('build/btmp/spigot-1.16.2.jar')
+			from file('build/btmp/spigot-1.16.4.jar')
 			into file('run/')
 		}
 		delete files('build/btmp')
@@ -46,7 +46,7 @@ task runSpigotServer (dependsOn: build) {
 		}
 		javaexec {
 			main = "-jar"
-			args = [ "spigot-1.16.1.jar" ]
+			args = [ "spigot-1.16.4.jar" ]
 			workingDir = "run/"
 		}
 	}
