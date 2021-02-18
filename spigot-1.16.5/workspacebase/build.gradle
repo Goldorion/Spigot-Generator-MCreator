@@ -26,6 +26,10 @@ dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
 }
 
+jar {
+    archiveFileName = 'plugin-1.0.jar'
+}
+
 processResources {
     from(sourceSets.main.resources.srcDirs) {
         filter ReplaceTokens, tokens: [version: version]

@@ -1,7 +1,7 @@
 <#-- @formatter:off -->
 <#include "procedures.java.ftl">
 
-package ${package}.command;
+package ${package}.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.entity.Entity;
