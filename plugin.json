@@ -1,9 +1,8 @@
 {
-  "id": "generator-spigot-1.16.4",
-  "minversion": 202000430417,
-  "maxversion": 202000599999,
+  "id": "generator-spigot-1.16.5",
+  "minversion": 202000600000,
   "info": {
-    "name": "Minecraft Spigot 1.16.4 Generator",
+    "name": "Minecraft Spigot 1.16.5 Generator",
     "version": "1.0.0-pre6",
     "description": "A Spigot Generator",
     "author": "Goldorion"
