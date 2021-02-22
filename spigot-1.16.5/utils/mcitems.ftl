@@ -7,6 +7,5 @@
 </#function>
 
 <#function mappedMCItemToItemStackCode mappedBlock>
-    <#return "Material." + mappedBlock>
-    </#if>
+    <#return "Material." + mappedBlock?upper_case>
 </#function>

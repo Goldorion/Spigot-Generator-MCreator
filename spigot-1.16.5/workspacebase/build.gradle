@@ -2,6 +2,7 @@ import org.apache.tools.ant.filters.ReplaceTokens
 
 plugins {
     id 'java'
+    id "de.undercouch.download" version "4.1.1"
 }
 
 group 'your.group'
@@ -30,10 +31,21 @@ jar {
     archiveFileName = 'plugin-1.0.jar'
 }
 
-processResources {
-    from(sourceSets.main.resources.srcDirs) {
-        filter ReplaceTokens, tokens: [version: version]
-    }
+task buildLatestSpigot(type: de.undercouch.gradle.tasks.download.Download)  {
+	src 'https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar'
+    dest 'build/btmp/BuildTools.jar'
+	doLast {
+		javaexec {
+			main = "-jar"
+			args = [ "BuildTools.jar", "--rev", "1.16.5" ]
+			workingDir = "build/btmp"
+		}
+		copy {
+			from file('build/btmp/spigot-1.16.5.jar')
+			into file('run/')
+		}
+		delete files('build/btmp')
+	}
 }
 
 

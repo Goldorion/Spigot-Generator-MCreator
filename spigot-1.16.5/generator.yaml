@@ -7,7 +7,7 @@ buildfileversion: 1.0.0-pre6
 gradle:
   export_file: "build/libs/plugin-1.0.jar"
   run_server: runSpigotServer
-  setup_task: processResources
+  setup_task: buildLatestSpigot
 
 source_root: "@WORKSPACEROOT/src/main/java"
 res_root: "@WORKSPACEROOT/src/main/resources"
