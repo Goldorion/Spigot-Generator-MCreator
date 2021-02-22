@@ -7,7 +7,6 @@
 </#function>
 
 <#function mappedMCItemToItemStackCode mappedBlock>
-    <#if mappedBlock.toString().contains("/*@ItemStack*/")>
-        <#return mappedBlock?replace("/*@ItemStack*/", "")>
+    <#return "Material." + mappedBlock>
     </#if>
 </#function>
