@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0-alpha-alpha07:
+* Updated to MCreator 2021.1.03117
+* Updated Spigot to Minecraft 1.16.5
+* Removed support for ClothCommons
+* Added support for following procedure blocks: Add item to player's inventory, Add potion effect to entity (basic & advanced)
+* [Bugfix] Create a new workspace caused an error
+* [Bugfix] Run the environment test server caused an error
+* [Bugfix] Export the plugin caused an error
+* [Bugfix] Some mapping files weren't correct
+
 ## 1.0-alpha06:
 * Updated the plugin for MCreator 2020.5
 * Updated Spigot for Minecraft 1.16.4

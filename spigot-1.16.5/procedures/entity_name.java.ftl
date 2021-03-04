@@ -1,1 +1,1 @@
-(player.getDisplayName())
+player.getDisplayName()
