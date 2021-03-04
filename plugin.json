@@ -1,10 +1,11 @@
 {
   "id": "generator-spigot-1.16.5",
-  "minversion": 202000600000,
+  "minversion": 202100103117,
   "info": {
     "name": "Minecraft Spigot 1.16.5 Generator",
-    "version": "1.0.0-pre6",
+    "version": "1.0.0-alpha07",
     "description": "A Spigot Generator",
-    "author": "Goldorion"
+    "author": "Goldorion",
+    "credits": "Klemen for his help at the beginning :D"
   }
 }

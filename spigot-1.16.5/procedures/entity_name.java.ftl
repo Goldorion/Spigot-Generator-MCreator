@@ -1,1 +1,1 @@
-player.getDisplayName()
+(player != null) ? player.getDisplayName() : entity.getCustomName()
