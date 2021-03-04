@@ -1,1 +1,1 @@
-(${input$entity}.isInsideVehicle())
+${input$entity}.isInsideVehicle()

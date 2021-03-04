@@ -1,1 +1,1 @@
-player.setAllowFlight(${input$condition});
+((Player) ${input$entity}).setAllowFlight(${input$condition});

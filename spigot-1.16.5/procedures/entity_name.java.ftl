@@ -1,1 +1,1 @@
-(player != null) ? player.getDisplayName() : entity.getCustomName()
+(${input$entity} instanceof Player) ? ((Player) ${input$entity}).getDisplayName() : ${input$entity}.getCustomName()

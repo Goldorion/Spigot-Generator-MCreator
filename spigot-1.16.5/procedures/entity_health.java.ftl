@@ -1,1 +1,1 @@
-(player.getHealth())
+((Player) ${input$entity}).getHealth()

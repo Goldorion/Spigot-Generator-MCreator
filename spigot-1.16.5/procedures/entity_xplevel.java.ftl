@@ -1,1 +1,1 @@
-player.getLevel()
+((Player) ${input$entity}).getLevel()

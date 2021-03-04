@@ -1,1 +1,1 @@
-(${input$entity}.isInvulnerable())
+${input$entity}.isInvulnerable()

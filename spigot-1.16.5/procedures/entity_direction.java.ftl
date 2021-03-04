@@ -1,1 +1,1 @@
-(${input$entity}.getFacing())
+${input$entity}.getFacing()

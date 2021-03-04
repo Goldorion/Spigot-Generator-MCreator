@@ -1,1 +1,1 @@
-(${input$entity}.getLocation().getY())
+${input$entity}.getLocation().getY()

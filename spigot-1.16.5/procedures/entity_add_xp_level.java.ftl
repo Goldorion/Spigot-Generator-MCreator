@@ -1,1 +1,1 @@
-player.setLevel(player.getLevel() + ${input$xpamount});
+((Player) ${input$entity}).setLevel(((Player) ${input$entity}).getLevel() + ${input$xpamount});

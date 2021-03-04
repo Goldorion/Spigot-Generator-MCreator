@@ -1,1 +1,1 @@
-(${input$entity}.isInWater())
+${input$entity}.isInWater()

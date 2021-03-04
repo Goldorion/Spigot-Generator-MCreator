@@ -1,1 +1,1 @@
-(player.isSprinting())
+((Player) ${input$entity}).isSprinting()

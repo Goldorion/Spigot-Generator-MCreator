@@ -1,1 +1,1 @@
-player.performCommand(${input$command});
+((Player) ${input$entity}).performCommand(${input$command});
