@@ -8,6 +8,7 @@
 * Added support for following block/world procedure blocks: Block is fluid, Get block light level, Get block at, Get Number & logic gamerule, Set Number & logic gamerule, Spawn entity, Spawn entity with rotation, Is block powered, Get redstone power 
 * Get Entity display name now returns the custom name of the entity if this is not a player
 * Procedure blocks for the player now uses the entity input
+* Added On Enable and On Disable gobal triggers
 * [Bugfix] Create a new workspace caused an error
 * [Bugfix] Run the environment test server caused an error
 * [Bugfix] Export the plugin caused an error
