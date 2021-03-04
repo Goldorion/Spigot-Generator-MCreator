@@ -1,0 +1,1 @@
+((world instanceof World)?((World) world).getBlockAt((int)${input$x},(int)${input$y},(int)${input$z}).isBlockPowered():false)
