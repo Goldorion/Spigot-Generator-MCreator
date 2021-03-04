@@ -1,25 +1,23 @@
-# MCreatorSpigotGenerator
-An unofficial plugin for [MCreator](https://mcreator.net/), a code generator to create Minecraft plugins. Adds a [Spigot](https://www.spigotmc.org/) generator type. Currently, this tool is very incomplete.
+# Spigot Generator for MCreator
+An unofficial plugin for [MCreator](https://mcreator.net/), a code generator to create Minecraft plugins. Adds a [Spigot](https://www.spigotmc.org/) generator type. Currently, this generator is very incomplete.
 
-## Disclaimer
-This project is not official. It is not affiliated with the respective owners and maintainers of Spigot/Bukkit, Minecraft, or MCreator. Do not expect any official support from their communities.
-
-## Features
-* Commands
-* [Procedures](https://github.com/Goldorion/MCreatorSpigotGenerator/blob/1.16.1/PROCEDURES.md)
-
-## Downloads/Install Instructions
-Downloads can be found on the [Release page of this repo](https://github.com/Goldorion/MCreatorSpigotGenerator/releases).
-The plugin's MCreator forum page is [here](https://mcreator.net/forum/64143/spigot-generator-plugin).
-
-Install like any other plugin: Launch MCreator -> Open preferences -> Manage plugins -> Load Plugin -> Find your downloaded zip file -> **Restart MCreator**.
-
-## Important Information
+## Information
 - To use the latest version of the plugin, you need to have the latest version of MCreator, **including snapshots**.
 
 - Always back up your workspace before updating to a newer version of the plugin.
 
 - Plugins also require [Spigot](https://getbukkit.org/download/spigot) to function properly.
+
+## Features
+* Commands
+* Procedures (Partial support)
+
+## Downloads/Install Instructions
+Downloads can be found on the [Release page of this repo](https://github.com/Goldorion/MCreatorSpigotGenerator/releases).
+The plugin's MCreator forum page is [here](https://mcreator.net/forum/64143/spigot-generator-plugin).
+
+## Disclaimer
+This project is not official. It is not affiliated with the respective owners and maintainers of Spigot/Bukkit, Minecraft, or MCreator. Do not expect any official support from their communities.
 
 ## Credits/License
 
