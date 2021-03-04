@@ -4,7 +4,8 @@
 * Updated to MCreator 2021.1.03117
 * Updated Spigot to Minecraft 1.16.5
 * Removed support for ClothCommons
-* Added support for following procedure blocks: Add item to player's inventory, Add potion effect to entity (basic & advanced), Entity is invulnerable, Entity is in water, Entity is alive, Entity is invisible, Entity is leashed, Entity is on ground
+* Added support for following entity procedure blocks: Add item to player's inventory, Add potion effect to entity (basic & advanced), Entity is invulnerable, Entity is in water, Entity is alive, Entity is invisible, Entity is leashed, Entity is on ground
+* Added support for following block/world procedure blocks: Block is fluid, Get block light level, Get block at 
 * Get Entity display name now returns the custom name of the entity if this is not a player
 * Procedure blocks for the player now uses the entity input
 * [Bugfix] Create a new workspace caused an error
