@@ -5,7 +5,7 @@ status: dev
 buildfileversion: 1.0.0-alpha7
 
 gradle:
-  export_file: "build/libs/plugin-1.0.jar"
+  export_file: "build/libs/plugin.jar"
   run_server: runSpigotServer
   setup_task: buildLatestSpigot
 

@@ -28,7 +28,7 @@ dependencies {
 }
 
 jar {
-    archiveFileName = 'plugin-1.0.jar'
+    archiveFileName = 'plugin.jar'
 }
 
 task buildLatestSpigot(type: de.undercouch.gradle.tasks.download.Download)  {
@@ -52,7 +52,7 @@ task buildLatestSpigot(type: de.undercouch.gradle.tasks.download.Download)  {
 task runSpigotServer (dependsOn: build) {
 	doLast {
 		copy {
-			from file('build/libs/plugin-1.0.jar')
+			from file('build/libs/plugin.jar')
 			into file('run/plugins/')
 		}
 		javaexec {
