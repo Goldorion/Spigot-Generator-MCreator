@@ -1,6 +1,9 @@
 # Changelog
+## 1.0-alpha08:
+* Added support for following procedure blocks: Get command parameters
+* Added support for following global triggers: On block multiplace, On block place
 
-## 1.0-alpha-alpha07:
+## 1.0-alpha07:
 * Updated to MCreator 2021.1.03117
 * Updated Spigot to Minecraft 1.16.5
 * Removed support for ClothCommons
