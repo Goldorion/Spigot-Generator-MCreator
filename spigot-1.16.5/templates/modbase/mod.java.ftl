@@ -19,21 +19,20 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class ${JavaModName} extends JavaPlugin {
 
   @Override
-  public void onEnable()
-  {
+  public void onEnable() {
+    // Commands
     <#list w.getElementsOfType("COMMAND") as command>
 		this.getCommand("${command}").setExecutor(new ${command}());
     </#list>
-	
+
+	// Procedures
 	<#list w.getElementsOfType("PROCEDURE") as procedure>
 		getServer().getPluginManager().registerEvents(new ${procedure.getName()}Procedure(), this);
     </#list>
   }
 
   @Override
-  public void onDisable()
-  {
-
+  public void onDisable() {
   }
 }
 <#-- @formatter:on -->
