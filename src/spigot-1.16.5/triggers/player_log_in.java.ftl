@@ -1,7 +1,7 @@
 @EventHandler public void onPlayerJoin(PlayerJoinEvent event) {
 	World world=event.getPlayer().getWorld();
 	Entity entity=event.getPlayer();
-  Player player = (Player) entiy;
+    Player player = (Player) entity;
 	double i=entity.getLocation().getX();
 	double j=entity.getLocation().getY();
 	double k=entity.getLocation().getZ();
