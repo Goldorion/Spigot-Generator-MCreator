@@ -1,0 +1,70 @@
+import jdk.internal.misc.OSEnvironment
+
+import java.nio.file.Files
+
+class Globals {
+    private static final def ARCHIVE_NAME = "generator-spigot"
+    private static final def MINECRAFT_VERSION = "1.16.5"
+
+    static def getArchiveName() {
+        return ARCHIVE_NAME + "-" + MINECRAFT_VERSION + ".zip"
+    }
+
+    static String getOSName() {
+        return System.getProperty("os.name").toLowerCase()
+    }
+}
+
+// workaround for IDEA-265203
+System.setProperty("user.dir", projectDir.toString())
+
+task build(type: Zip) {
+    from 'src'
+    archiveFileName = Globals.getArchiveName()
+    destinationDirectory = file('build/')
+}
+
+task install {
+    dependsOn build
+    doLast {
+        System.out.println("Installing plugin...")
+        if (Globals.getOSName().contains('mac') || Globals.getOSName().contains('OS X') || Globals.getOSName().contains('linux')) {
+            installPlugin((String) ("/Users/" + System.getProperty("user.name") + "/.mcreator/plugins/"), (String) '/')
+        } else if (Globals.getOSName().contains('windows')) {
+            installPlugin((String) ("C:\\Users\\" + System.getProperty("user.name") + "\\.mcreator\\plugins\\"), (String) '\\')
+        }
+    }
+}
+
+task launch {
+    dependsOn install
+    doLast {
+        System.out.println("Launching MCreator...")
+        if (Globals.getOSName().contains('windows')) {
+            try {
+                exec {
+                    workingDir "C://Program Files/Pylo/MCreator/"
+                    commandLine 'cmd', '/c', 'mcreator.bat'
+                }
+            } catch (IOException e) {
+                throw new RuntimeException("Could not launch MCreator! Please make sure you have installed it to C://Program Files/", e)
+            }
+        }
+    }
+}
+
+static def installPlugin(String path, String separator) {
+    File des = new File((String) (path + Globals.getArchiveName()))
+    File original = new File(String.format("%s%s%s%s%s", System.getProperty("user.dir"), separator, "build", separator, Globals.getArchiveName()))
+    if (des.exists()) {
+        des.delete()
+    }
+    try {
+        FileOutputStream os = new FileOutputStream(des)
+        Files.copy(original.toPath(), os)
+        System.out.println(String.format("Plugin successfully installed to %s ", path))
+    } catch (IOException e) {
+        e.printStackTrace()
+        throw new RuntimeException("Could not install plugin!")
+    }
+}

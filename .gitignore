@@ -14,7 +14,7 @@ build
 *.iml
 .idea
 
-# Mac OS Garbage
+# Mac OS Garbage    
 .DS_Store
 
 # VSCode
@@ -23,3 +23,6 @@ build
 
 # BBedit
 *.bbproject
+
+# Ignore Gradle project-specific cache directory
+.gradle
