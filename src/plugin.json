@@ -1,11 +1,13 @@
 {
   "id": "generator-spigot-1.16.5",
-  "minversion": 202100103117,
+  "minversion": 202100233614,
   "info": {
     "name": "Minecraft Spigot 1.16.5 Generator",
     "version": "1.0.0-alpha07",
     "description": "A Spigot Generator",
     "author": "Goldorion",
-    "credits": "Klemen for his help at the beginning :D"
+    "credits": "Klemen for his help at the beginning :D",
+    "updateJSONURL": "https://raw.githubusercontent.com/Goldorion/Spigot-Generator-MCreator/1.16.5/update.json",
+    "pluginPageID": 64516
   }
 }

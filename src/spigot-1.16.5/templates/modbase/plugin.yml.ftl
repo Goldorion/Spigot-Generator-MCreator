@@ -1,5 +1,5 @@
 main: ${package}.${JavaModName}
-name: ${settings.getModName()}
+name: ${settings.getModName()?replace(" ", "")}
 version: ${settings.getVersion()}
 authors: [${settings.getAuthor()}]
 <#if settings.getDescription()?has_content>
@@ -11,7 +11,7 @@ website: ${settings.getWebsiteURL()}
 api-version: 1.16
 
 commands:
-  <#list w.getElementsOfType("COMMAND") as command>
+  <#list w.getElementsOfType("command") as command>
   <#assign ge = command.getGeneratableElement()>
   ${ge.commandName}:
     permission: ${ge.commandName}.use

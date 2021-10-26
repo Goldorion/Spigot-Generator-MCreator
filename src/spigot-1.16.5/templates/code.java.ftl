@@ -15,7 +15,7 @@
 */
 
 package ${package}.custom;
-public class ${name}CustomClass {
+public class ${name} {
 
 
 }
