@@ -1,12 +1,12 @@
 # Changelog
 
 ## 1.0
-* [Bugfix #46] On player join global trigger caused a build error
 
-## 1.0-alpha08:
-
+* Added Custom code element support
 * Added support for following procedure blocks: Get command parameters
 * Added support for following global triggers: On block multiplace, On block place
+* ADded Turkish translations (by TheKralGameOfficial)
+* [Bugfix #46] On player join global trigger caused a build error
 
 ## 1.0-alpha07:
 
