@@ -1,8 +1,9 @@
 # Changelog
 
 ## 1.0
-Note: Incompatible with MCreator 2021.2.31709 and older
-* Update to MCreator 2021.2
+Note: Compatible with MCreator 2021.3.51610 and newest only
+* Update to MCreator 2021.3.51610
+* Added base support for Spigot 1.17.1
 * Added Custom code element support
 * Added support for following procedure blocks: Get command parameters
 * Added support for following global triggers: On block multiplace, On block place
