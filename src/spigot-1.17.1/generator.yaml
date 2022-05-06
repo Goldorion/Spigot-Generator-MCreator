@@ -1,11 +1,11 @@
-name: Minecraft Spigot for 1.17.1
+name: Minecraft Spigot for 1.18.2
 basefeatures: []
 partial_support: [command, procedures]
 status: dev
-buildfileversion: 1.0.0-alpha8
+buildfileversion: 0.8.0
 
 gradle:
-  export_file: "build/libs/plugin-1.17.1.jar"
+  export_file: "build/libs/plugin-1.18.2.jar"
   run_server: runSpigotServer
   setup_task: buildLatestSpigot
 
