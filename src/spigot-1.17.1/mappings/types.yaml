@@ -1,9 +1,10 @@
 _default: Object
-world: World
 number: double
-entity: Entity
-itemstack: ItemStack
-map: HashMap
 string: String
 boolean: boolean
+blockstate: BlockState
+itemstack: ItemStack
+world: World
+entity: Entity
+map: HashMap
 direction: Direction

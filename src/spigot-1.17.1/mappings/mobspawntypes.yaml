@@ -1,6 +1,9 @@
-_default: EntityClassification.MONSTER
-monster: EntityClassification.MONSTER
-creature: EntityClassification.CREATURE
-ambient: EntityClassification.AMBIENT
-waterCreature: EntityClassification.AQUATIC
-misc: EntityClassification.MISC
+_default: SpawnCategory.MONSTER
+monster: SpawnCategory.MONSTER
+creature: SpawnCategory.CREATURE
+ambient: SpawnCategory.AMBIENT
+undergroundWaterCreature: SpawnCategory.UNDERGROUND_WATER_CREATURE
+waterCreature: SpawnCategory.WATER_CREATURE
+waterAmbient: SpawnCategory.WATER_AMBIENT
+misc: SpawnCategory.MISC
+axolotls: SpawnCategory.AXOLOTL
