@@ -2,7 +2,7 @@
 An unofficial plugin for [MCreator](https://mcreator.net/), a code generator for Minecraft. This plugin adds a [Spigot](https://www.spigotmc.org/) generator. As it is still in development, many features are missing and can not be used/made.
 
 ## Information
-- To use the latest version of the plugin, you need to have the latest version of MCreator, **including snapshots**.
+- To use the latest version of the plugin, you need to have the latest version of MCreator.
 
 - Always back up your workspace before updating to a newer version of the plugin.
 

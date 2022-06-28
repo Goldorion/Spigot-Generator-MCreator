@@ -1,13 +1,13 @@
 {
-  "id": "generator-spigot-1.17.1",
+  "id": "generator-spigot-1.19",
   "minversion": 202200119518,
   "info": {
-    "name": "Minecraft Spigot 1.18.2 Generator",
-    "version": "0.8.0",
+    "name": "Minecraft Spigot 1.19 Generator",
+    "version": "0.9.0",
     "description": "A Spigot Generator",
     "author": "Goldorion",
     "credits": "Klemen for his help at the beginning :D",
-    "updateJSONURL": "https://raw.githubusercontent.com/Goldorion/Spigot-Generator-MCreator/1.18.2/update.json",
+    "updateJSONURL": "https://raw.githubusercontent.com/Goldorion/Spigot-Generator-MCreator/1.19.x/update.json",
     "pluginPageID": 64516
   }
 }

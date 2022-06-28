@@ -24,11 +24,11 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'org.spigotmc:spigot-api:1.18.2-R0.1-SNAPSHOT'
+    compileOnly 'org.spigotmc:spigot-api:' + project.minecraft + '-R0.1-SNAPSHOT'
 }
 
 jar {
-    archiveFileName = 'plugin-1.18.2.jar'
+    archiveFileName = 'plugin-' + project.minecraft + '.jar'
 }
 
 task buildLatestSpigot(type: Download)  {
@@ -37,11 +37,11 @@ task buildLatestSpigot(type: Download)  {
 	doLast {
 		javaexec {
 			main = "-jar"
-			args = [ "BuildTools.jar", "--rev", "1.18.2" ]
+			args = [ "BuildTools.jar", "--rev", project.minecraft ]
 			workingDir = "build/btmp"
 		}
 		copy {
-			from file('build/btmp/spigot-1.18.2.jar')
+			from file('build/btmp/spigot-' + project.minecraft + '.jar')
 			into file('run/')
 		}
 		delete files('build/btmp')
@@ -52,12 +52,12 @@ task buildLatestSpigot(type: Download)  {
 task runSpigotServer (dependsOn: build) {
 	doLast {
 		copy {
-			from file('build/libs/plugin-1.18.2.jar')
+			from file('build/libs/plugin-' + project.minecraft + '.jar')
 			into file('run/plugins/')
 		}
 		javaexec {
 			main = "-jar"
-			args = [ "spigot-1.18.2.jar" ]
+			args = [ "spigot-" + project.minecraft + ".jar" ]
 			workingDir = "run/"
 		}
 	}
