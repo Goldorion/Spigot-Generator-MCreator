@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.0
+* Updated to Minecraft 1.19
+  * Mappings related to 1.19 are not implemented. Waiting for official data lists
+
 ## 0.8.0
 Note: Compatible with MCreator 2022.1.19518 and newest only
 * Update to MCreator 2022.1.19518
