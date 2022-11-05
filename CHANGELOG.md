@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.10.0
+* Ported the command mod element to the new system
+  Note: Only the normal call procedure and the old command call procedure are available.
+
 ## 0.9.0
 * Updated to Minecraft 1.19
   * Mappings related to 1.19 are not implemented. Waiting for official data lists

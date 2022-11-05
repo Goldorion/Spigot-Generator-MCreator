@@ -8,11 +8,10 @@ description: ${settings.getDescription()}
 <#if settings.getWebsiteURL()?has_content>
 website: ${settings.getWebsiteURL()}
 </#if>
-api-version: 1.16
+api-version: 1.19
 
 commands:
   <#list w.getElementsOfType("command") as command>
-  <#assign ge = command.getGeneratableElement()>
-  ${ge.commandName}:
-    permission: ${ge.commandName}.use
+  ${command.getModElement().getRegistryName()}:
+    permission: ${command.getModElement().getRegistryName()}.use
   </#list>

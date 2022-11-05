@@ -6,14 +6,11 @@ package ${package}.commands;
 import org.bukkit.command.Command;
 import org.bukkit.entity.Entity;
 
-public class ${name} implements CommandExecutor
-{
+public class ${name} implements CommandExecutor {
 
 	@Override
-	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
-	{
-		if(label.equalsIgnoreCase("${data.commandName}"))
-		{
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+		if(label.equalsIgnoreCase("${data.commandName}") && sender.hasPermission(${name}.use) {
 			double x = 0;
 			double y = 0;
 			double z = 0;
@@ -40,17 +37,8 @@ public class ${name} implements CommandExecutor
 				world = ((BlockCommandSender) sender).getBlock().getWorld();
 			}
 
-			<#if hasProcedure(data.onCommandExecuted)>
-			HashMap<String, String> cmdparams = new HashMap<>();
-			int[] index = { -1 };
-			Arrays.stream(args).forEach(param -> {
-				if(index[0] >= 0)
-					cmdparams.put(Integer.toString(index[0]), param);
-				index[0]++;
-			});
+			${argscode}
 
-			<@procedureOBJToCode data.onCommandExecuted/>
-			</#if>
 			return true;
 		}
 		return false;
