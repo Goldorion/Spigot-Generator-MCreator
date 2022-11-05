@@ -1,11 +1,11 @@
-name: Minecraft Spigot for 1.19
+name: Minecraft Spigot for 1.19.2
 basefeatures: []
 partial_support: [command, procedures]
 status: dev
 buildfileversion: 0.9.0
 
 gradle:
-  export_file: "build/libs/plugin-1.19.jar"
+  export_file: "build/libs/plugin-1.19.2.jar"
   run_server: runSpigotServer
   setup_task: buildLatestSpigot
 
