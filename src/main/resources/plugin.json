@@ -1,6 +1,7 @@
 {
   "id": "generator-spigot-1.19.2",
   "minversion": 202200119518,
+  "javaplugin": "net.goldorion.spigotgenerator.SpigotGeneratorPlugin",
   "info": {
     "name": "Minecraft Spigot 1.19.2 Generator",
     "version": "0.9.0",
