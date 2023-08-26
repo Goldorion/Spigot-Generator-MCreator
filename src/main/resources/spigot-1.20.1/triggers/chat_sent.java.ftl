@@ -1,6 +1,6 @@
 <#include "procedures.java.ftl">
 public class ${name}Procedure implements Listener {
-    @EventHandler public void onPlayerJoins(PlayerJoinEvent event) {
+    @EventHandler public void onMessageSent(AsyncPlayerChatEvent event) {
         <#assign dependenciesCode><#compress>
             <@procedureDependenciesCode dependencies, {
             "x": "event.getPlayer().getLocation().getX()",
@@ -8,6 +8,7 @@ public class ${name}Procedure implements Listener {
             "z": "event.getPlayer().getLocation().getZ()",
             "world": "event.getPlayer().getWorld()",
             "entity": "event.getPlayer()",
+            "text": "event.getMessage()",
             "event": "event"
             }/>
         </#compress></#assign>

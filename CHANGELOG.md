@@ -4,6 +4,7 @@
 * Updated to Minecraft 1.20.1 (mappings included)
 * Ported the command mod element to the new system
   Note: Only the normal call procedure and the old command call procedure are available.
+* Added support for 30 new global triggers
 * Greatly improved the generated code
 * [Bugfix] Fix some procedure blocks causing build errors
 

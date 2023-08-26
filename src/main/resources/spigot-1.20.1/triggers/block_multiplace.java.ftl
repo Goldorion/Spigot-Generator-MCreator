@@ -11,7 +11,7 @@ public class ${name}Procedure implements Listener {
             "pz": "event.getPlayer().getLocation().getZ()",
             "world": "event.getBlock().getWorld()",
             "entity": "event.getPlayer()",
-            "blockstate": "event.getBlockReplacedState()",
+            "blockstate": "event.getBlock().getState()",
 			"placedagainst": "event.getBlockAgainst().getState()",
             "event": "event"
             }/>

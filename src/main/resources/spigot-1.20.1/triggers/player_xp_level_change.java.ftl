@@ -1,6 +1,6 @@
 <#include "procedures.java.ftl">
 public class ${name}Procedure implements Listener {
-    @EventHandler public void onPlayerJoins(PlayerJoinEvent event) {
+    @EventHandler public void onPlayerLevelChange(PlayerLevelChangeEvent event) {
         <#assign dependenciesCode><#compress>
             <@procedureDependenciesCode dependencies, {
             "x": "event.getPlayer().getLocation().getX()",
@@ -8,6 +8,7 @@ public class ${name}Procedure implements Listener {
             "z": "event.getPlayer().getLocation().getZ()",
             "world": "event.getPlayer().getWorld()",
             "entity": "event.getPlayer()",
+            "amount": "event.getNewLevel()",
             "event": "event"
             }/>
         </#compress></#assign>

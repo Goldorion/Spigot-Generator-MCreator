@@ -1,13 +1,9 @@
 <#include "procedures.java.ftl">
 public class ${name}Procedure implements Listener {
-    @EventHandler public void onPlayerJoins(PlayerJoinEvent event) {
+    @EventHandler public void onWorldLoaded(WorldLoadEvent event) {
         <#assign dependenciesCode><#compress>
             <@procedureDependenciesCode dependencies, {
-            "x": "event.getPlayer().getLocation().getX()",
-            "y": "event.getPlayer().getLocation().getY()",
-            "z": "event.getPlayer().getLocation().getZ()",
-            "world": "event.getPlayer().getWorld()",
-            "entity": "event.getPlayer()",
+            "world": "event.getWorld()",
             "event": "event"
             }/>
         </#compress></#assign>
