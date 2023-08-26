@@ -7,7 +7,8 @@
 * Added support for 30 new global triggers
 * Added support for 65 new entity and player related procedure blocks
 * Added support for 15 new item related procedure blocks
-* Added support for 11 misc and direction procedure blocks
+* Added support for 14 new world related procedure blocks
+* Added support for 11 new misc and direction procedure blocks
 * Added support for the Return procedure block
 * Greatly improved the generated code
 * [Bugfix] Fix some procedure blocks causing build errors

@@ -18,21 +18,24 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class ${JavaModName} extends JavaPlugin {
 
-  @Override
-  public void onEnable() {
-    // Commands
-    <#list w.getElementsOfType("command") as command>
-		this.getCommand("${command.getGeneratableElement().commandName}").setExecutor(new ${command}());
-    </#list>
+    public static Server server;
 
-	// Procedures
-	<#list w.getElementsOfType("procedure") as procedure>
-		getServer().getPluginManager().registerEvents(new ${procedure.getName()}Procedure(), this);
-    </#list>
-  }
+    @Override
+    public void onEnable() {
+        server = this.getServer();
+        // Commands
+        <#list w.getElementsOfType("command") as command>
+		    this.getCommand("${command.getGeneratableElement().commandName}").setExecutor(new ${command}());
+        </#list>
 
-  @Override
-  public void onDisable() {
-  }
+	    // Procedures
+	    <#list w.getElementsOfType("procedure") as procedure>
+	    	getServer().getPluginManager().registerEvents(new ${procedure.getName()}Procedure(), this);
+        </#list>
+    }
+
+    @Override
+    public void onDisable() {
+    }
 }
 <#-- @formatter:on -->
