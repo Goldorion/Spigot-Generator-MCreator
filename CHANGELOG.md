@@ -5,6 +5,7 @@
 * Ported the command mod element to the new system
   Note: Only the normal call procedure and the old command call procedure are available.
 * Added support for 30 new global triggers
+* Added support for the Return procedure block
 * Greatly improved the generated code
 * [Bugfix] Fix some procedure blocks causing build errors
 
