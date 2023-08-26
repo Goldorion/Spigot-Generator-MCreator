@@ -1,1 +1,1 @@
-((Player) ${input$entity}).isSneaking()
+${input$entity} instanceof Player _entity && _entity.isSneaking()

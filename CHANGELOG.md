@@ -4,6 +4,8 @@
 * Updated to Minecraft 1.20.1 (mappings included)
 * Ported the command mod element to the new system
   Note: Only the normal call procedure and the old command call procedure are available.
+* Greatly improved the generated code
+* [Bugfix] Fix some procedure blocks causing build errors
 
 ## 0.9.0
 * Updated to Minecraft 1.19
@@ -20,7 +22,6 @@ Note: Compatible with MCreator 2022.1.19518 and newest only
 * [Bugfix #46] On player join global trigger caused a build error
 
 ## 1.0-alpha07:
-
 * Updated to MCreator 2021.1.03117
 * Updated Spigot to Minecraft 1.16.5
 * Removed support for ClothCommons
@@ -40,20 +41,16 @@ Note: Compatible with MCreator 2022.1.19518 and newest only
 * [Bugfix] Number dependencies didn't work properly
 
 ## 1.0-alpha06:
-
 * Updated the plugin for MCreator 2020.5
 * Updated Spigot for Minecraft 1.16.4
 
 ## 1.0-alpha05:
-
 * Added all mappings (1.16.2 and before)
 
 ## 1.0-alpha04:
-
 * Updated to Minecraft 1.16.2
 
 ## 1.0-alpha03:
-
 * Added a lot of new procedure blocks
 * Added support for Global triggers (Thank you Klemen)
 * Added support to test plugins inside MCreator (Thank you Klemen)
@@ -61,15 +58,12 @@ Note: Compatible with MCreator 2022.1.19518 and newest only
 * Few bug fixes
 
 ## 1.0-alpha02:
-
 * Added Gradle wrapper
 * Added partial support for Procedures (Thank you to Klemen)
 * Added a few procedure blocks (Thank you to Klemen)
 * Changed the license for the GNU Lesser General Public License v2.1
 
 ## 1.0-alpha01:
-
 First version of the plugin
-
 * Base workspace
 * Added Commands

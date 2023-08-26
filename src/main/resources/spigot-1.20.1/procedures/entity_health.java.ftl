@@ -1,1 +1,1 @@
-((Player) ${input$entity}).getHealth()
+${input$entity} instanceof Player _player ? _player.getHealth() : 0

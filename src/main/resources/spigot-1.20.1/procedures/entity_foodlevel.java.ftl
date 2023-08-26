@@ -1,1 +1,1 @@
-((org.bukkit.entity.Player)${input$entity}).getFoodLevel()
+${input$entity} instanceof Player _player ? _player.getFoodLevel() : 0

@@ -1,1 +1,1 @@
-((${input$entity} instanceof LivingEntity)?((LivingEntity) ${input$entity}).isLeashed():false)
+${input$entity} instanceof LivingEntity _entity && _entity.isLeashed()

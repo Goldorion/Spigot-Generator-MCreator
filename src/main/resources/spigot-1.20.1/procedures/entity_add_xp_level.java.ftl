@@ -1,1 +1,2 @@
-((Player) ${input$entity}).setLevel(((Player) ${input$entity}).getLevel() + ${input$xpamount});
+if(${input$entity} instanceof Player _player)
+    _player.setLevel(_player.getLevel() + ${input$xpamount});

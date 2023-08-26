@@ -1,1 +1,2 @@
-((Player) ${input$entity}).performCommand(${input$command});
+if(${input$entity} instanceof Player _player)
+    _player.performCommand(${input$command});

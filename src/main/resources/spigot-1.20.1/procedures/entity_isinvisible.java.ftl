@@ -1,1 +1,1 @@
-(((${input$entity} instanceof LivingEntity)?((LivingEntity) entity).isInvisible() : false)
+${input$entity} instanceof LivingEntity _entity && _entity.isInvisible())

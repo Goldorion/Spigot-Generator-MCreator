@@ -1,1 +1,2 @@
-((Player) ${input$entity}).setAllowFlight(${input$condition});
+if(${input$entity} instanceof Player _player)
+    _player.setAllowFlight(${input$condition});
