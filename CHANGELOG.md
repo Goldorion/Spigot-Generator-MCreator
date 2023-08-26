@@ -6,6 +6,7 @@
   Note: Only the normal call procedure and the old command call procedure are available.
 * Added support for 30 new global triggers
 * Added support for 65 new entity and player related procedure blocks
+* Added support for 15 new item related procedure blocks
 * Added support for the Return procedure block
 * Greatly improved the generated code
 * [Bugfix] Fix some procedure blocks causing build errors
