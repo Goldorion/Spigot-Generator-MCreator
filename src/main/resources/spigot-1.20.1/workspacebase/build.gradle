@@ -28,7 +28,7 @@ dependencies {
 }
 
 jar {
-    archiveFileName = 'plugin-' + project.minecraft + '.jar'
+    archiveFileName = 'plugin.jar'
 }
 
 task buildLatestSpigot(type: Download)  {
@@ -41,7 +41,7 @@ task buildLatestSpigot(type: Download)  {
 			workingDir = "build/btmp"
 		}
 		copy {
-			from file('build/btmp/spigot-' + project.minecraft + '.jar')
+			from file('build/btmp/spigot.jar')
 			into file('run/')
 		}
 		delete files('build/btmp')
@@ -52,12 +52,12 @@ task buildLatestSpigot(type: Download)  {
 task runSpigotServer (dependsOn: build) {
 	doLast {
 		copy {
-			from file('build/libs/plugin-' + project.minecraft + '.jar')
+			from file('build/libs/plugin.jar')
 			into file('run/plugins/')
 		}
 		javaexec {
 			main = "-jar"
-			args = [ "spigot-" + project.minecraft + ".jar" ]
+			args = [ "spigot.jar" ]
 			workingDir = "run/"
 		}
 	}

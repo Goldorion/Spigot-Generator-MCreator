@@ -61,31 +61,5 @@ snowy_slopes: SNOW_SLOPES
 frozen_peaks: FROZEN_PEAKS
 jagged_peaks: JAGGED_PEAKS
 stony_peaks: STONY_PEAKS
-
-# legacy (removed/merged in 1.18)
-snowy_mountains: WINDSWEPT_HILLS
-mushroom_field_shore: MUSHROOM_FIELDS
-desert_hills: DESERT
-forest_hills: FOREST
-taiga_hills: TAIGA
-smaller_extreme_hills: WINDSWEPT_HILLS
-jungle_hills: JUNGLE
-redwood_taiga_hills: OLD_GROWTH_PINE_TAIGA
-taiga_cold_hills: SNOW_TAIGA
-birch_forest_hills: BIRCH_FOREST
-badlands_plateau: BADLANDS
-deep_warm_ocean: WARM_OCEAN
-mutated_desert: OCEAN
-mutated_extreme_hills_with_trees: WINDSWEPT_GRAVELLY_HILLS
-mutated_taiga: TAIGA
-mutated_swampland: SWAMP
-mutated_jungle: JUNGLE
-mutated_jungle_edge: SPARSE_JUNGLE
-bamboo_jungle_hills: BAMBOO_JUNGLE
-mutated_birch_forest_hills: OLD_GROWTH_BIRCH_FOREST
-mutated_roofed_forest: DARK_FOREST
-mutated_taiga_cold: SNOWY_TAIGA
-mutated_redwood_taiga_hills: OLD_GROWTH_BSPRUCE_TAIGA
-mutated_savanna_rock: WINDSWEPT_SAVANNA
-mutated_mesa_rock: WOODED_BADLANDS
-mutated_mesa_clear_rock: ERODED_BADLANDS
+mangrove_swamp: MANGROVE_SWAMP
+deep_dark: DEEP_DARK

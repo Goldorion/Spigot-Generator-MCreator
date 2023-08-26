@@ -1,0 +1,14 @@
+_default: CreativeCategory.MISC
+_mcreator_prefix: "CUSTOM:"
+_mcreator_map_template: "@JavaModName.@NAME"
+No creative tab entry: null
+BUILDING_BLOCKS: CreativeCategory.BUILDING_BLOCKS
+DECORATIONS: CreativeCategory.DECORATIONS
+REDSTONE: CreativeCategory.REDSTONE
+TRANSPORTATION: CreativeCategory.TRANSPORTATION
+MISC: CreativeCategory.MISC
+FOOD: CreativeCategory.FOOD
+TOOLS: CreativeCategory.TOOLS
+COMBAT: CreativeCategory.COMBAT
+BREWING: CreativeCategory.BREWING
+MATERIALS: CreativeCategory.MISC

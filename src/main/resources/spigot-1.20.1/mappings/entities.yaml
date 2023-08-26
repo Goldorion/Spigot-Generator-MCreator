@@ -4,10 +4,13 @@ _mcreator_map_template: "@modid:@registryname"
 EntityAreaEffectCloud: area_effect_cloud
 EntityArmorStand: armor_stand
 EntityArrow: arrow
+EntityAxolotl: axolotl
 EntityBat: bat
 EntityBee: bee
 EntityBlaze: blaze
+EntityBlockDisplay: block_display
 EntityBoat: boat
+EntityCamel: camel
 EntityCat: cat
 EntityCaveSpider: cave_spider
 EntityChicken: chicken
@@ -32,6 +35,7 @@ EntityFireworkRocket: firework_rocket
 EntityFox: fox
 EntityGhast: ghast
 EntityGiantZombie: giant
+EntityGoat: goat
 EntityGuardian: guardian
 EntityHoglin: hoglin
 EntityHorse: horse
@@ -46,6 +50,7 @@ EntityLeashKnot: leash_knot
 EntityLlama: llama
 EntityLlamaSpit: llama_spit
 EntityMagmaCube: magma_cube
+EntityMarker: marker
 EntityMinecart: minecart
 EntityMinecartChest: chest_minecart
 EntityMinecartCommandBlock: command_block_minecart
@@ -61,9 +66,11 @@ EntityPanda: panda
 EntityParrot: parrot
 EntityPig: pig
 EntityPillager: pillager
-EntityPufferfish: pufferfish
+EntityPiglin: piglin
+EntityPiglinBrute: piglin_brute
 EntityPigZombie: zombified_piglin
 EntityPolarBear: polar_bear
+EntityPufferfish: pufferfish
 EntityTNTPrimed: tnt
 EntityRabbit: rabbit
 EntitySalmon: salmon
@@ -75,11 +82,13 @@ EntitySkeleton: skeleton
 EntitySkeletonHorse: skeleton_horse
 EntitySlime: slime
 EntitySmallFireball: small_fireball
+EntitySniffer: sniffer
 EntitySnowman: snow_golem
 EntitySnowball: snowball
 EntitySpectralArrow: spectral_arrow
 EntitySpider: spider
 EntitySquid: squid
+EntityStrider: strider
 EntityGlowSquid: glow_squid
 EntityStray: stray
 EntityTraderLlama: trader_llama
@@ -99,6 +108,7 @@ EntityWither: wither
 EntityWitherSkeleton: wither_skeleton
 EntityWitherSkull: wither_skull
 EntityWolf: wolf
+EntityZoglin: zoglin
 EntityZombie: zombie
 EntityZombieHorse: zombie_horse
 EntityZombieVillager: zombie_villager
@@ -108,10 +118,3 @@ EntityLightningBolt: lightning_bolt
 EntityPlayer: player
 EntityPlayerMP: player
 EntityFishHook: fishing_bobber
-EntityPiglin: piglin
-EntityPiglinBrute: piglin_brute
-EntityStrider: strider
-EntityZoglin: zoglin
-EntityAxolotl: axolotl
-EntityGoat: goat
-EntityMarker: marker

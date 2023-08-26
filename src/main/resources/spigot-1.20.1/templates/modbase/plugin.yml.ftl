@@ -8,7 +8,7 @@ description: ${settings.getDescription()}
 <#if settings.getWebsiteURL()?has_content>
 website: ${settings.getWebsiteURL()}
 </#if>
-api-version: 1.19
+api-version: 1.20
 
 commands:
   <#list w.getElementsOfType("command") as command>
