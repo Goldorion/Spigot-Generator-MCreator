@@ -9,6 +9,6 @@
 
 
 if (_ent instanceof Player _player) {
-    _player.getScoreboard().registerNewObjective(${input$score}, Criteria.DUMMY, ${input$score}, RenderType.INTEGER);
-    _player.getScoreboard().getObjective(${input$score}).getScore(_player.getPlayerListName()).setScore(${opt.toInt(input$value)});
+	_player.getScoreboard().registerNewObjective(${input$score}, Criteria.DUMMY, ${input$score}, RenderType.INTEGER);
+	_player.getScoreboard().getObjective(${input$score}).getScore(_player.getPlayerListName()).setScore(${opt.toInt(input$value)});
 }

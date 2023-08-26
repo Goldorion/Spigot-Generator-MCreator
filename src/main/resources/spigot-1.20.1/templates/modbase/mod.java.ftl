@@ -1,14 +1,14 @@
 <#-- @formatter:off -->
 /*
- *    MCreator note:
+ *	MCreator note:
  *
- *    If you lock base mod element files, you can edit this file and the proxy files
- *    and they won't get overwritten. If you change your mod package or modid, you
- *    need to apply these changes to this file MANUALLY.
+ *	If you lock base mod element files, you can edit this file and the proxy files
+ *	and they won't get overwritten. If you change your mod package or modid, you
+ *	need to apply these changes to this file MANUALLY.
  *
  *
- *    If you do not lock base mod element files in Workspace settings, this file
- *    will be REGENERATED on each build.
+ *	If you do not lock base mod element files in Workspace settings, this file
+ *	will be REGENERATED on each build.
  *
  */
 
@@ -18,24 +18,24 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class ${JavaModName} extends JavaPlugin {
 
-    public static Server server;
+	public static Server server;
 
-    @Override
-    public void onEnable() {
-        server = this.getServer();
-        // Commands
-        <#list w.getElementsOfType("command") as command>
-		    this.getCommand("${command.getGeneratableElement().commandName}").setExecutor(new ${command}());
-        </#list>
+	@Override
+	public void onEnable() {
+		server = this.getServer();
+		// Commands
+		<#list w.getElementsOfType("command") as command>
+			this.getCommand("${command.getGeneratableElement().commandName}").setExecutor(new ${command}());
+		</#list>
 
-	    // Procedures
-	    <#list w.getElementsOfType("procedure") as procedure>
-	    	getServer().getPluginManager().registerEvents(new ${procedure.getName()}Procedure(), this);
-        </#list>
-    }
+		// Procedures
+		<#list w.getElementsOfType("procedure") as procedure>
+			getServer().getPluginManager().registerEvents(new ${procedure.getName()}Procedure(), this);
+		</#list>
+	}
 
-    @Override
-    public void onDisable() {
-    }
+	@Override
+	public void onDisable() {
+	}
 }
 <#-- @formatter:on -->
