@@ -20,7 +20,7 @@ dependencies {
 }
 
 tasks.jar {
-    archiveFileName.set("demo-plugin.zip")
+    archiveFileName.set("spigot-generator.zip")
 }
 
 task runMCreatorWithPlugin(type: JavaExec) {
