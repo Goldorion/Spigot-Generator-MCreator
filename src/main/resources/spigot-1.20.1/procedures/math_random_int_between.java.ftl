@@ -1,0 +1,1 @@
+/*@int*/(new java.util.Random().nextInt(${opt.toInt(input$min)}, ${opt.toInt(input$max)}))

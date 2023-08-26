@@ -1,0 +1,1 @@
+(new java.util.Random().nextDouble(${opt.removeParentheses(input$min)}, ${opt.removeParentheses(input$max)}))
