@@ -1,0 +1,1 @@
+${input$entity}.setFireTicks(0);

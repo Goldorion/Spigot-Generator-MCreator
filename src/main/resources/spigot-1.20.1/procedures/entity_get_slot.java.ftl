@@ -1,0 +1,1 @@
+/*@ItemStack*/(${input$entity} instanceof Player _player ? _player.getInventory().getItem(${opt.toInt(input$slotid)}) : ItemStack.EMPTY)

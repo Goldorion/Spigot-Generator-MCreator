@@ -1,0 +1,1 @@
+${input$entity}.addPassenger(${input$sourceentity});

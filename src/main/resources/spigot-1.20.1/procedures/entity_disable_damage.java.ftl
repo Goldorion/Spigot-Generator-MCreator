@@ -1,0 +1,1 @@
+_player.setInvulnerable(${input$condition});

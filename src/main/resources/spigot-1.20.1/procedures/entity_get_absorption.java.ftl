@@ -1,0 +1,1 @@
+/*@float*/(${input$entity} instanceof LivingEntity _le ? _le.getAbsorptionAmount() : 0)

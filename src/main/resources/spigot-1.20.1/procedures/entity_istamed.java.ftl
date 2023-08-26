@@ -1,0 +1,1 @@
+(${input$entity} instanceof Tameable _tamEnt && _tamEnt.isTamed())

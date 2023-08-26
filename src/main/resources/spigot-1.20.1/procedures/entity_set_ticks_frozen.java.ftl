@@ -1,0 +1,1 @@
+${input$entity}.setFreezeTicks(${opt.toInt(input$ticksfrozen)});

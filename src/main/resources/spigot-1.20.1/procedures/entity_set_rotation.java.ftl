@@ -1,0 +1,1 @@
+${input$entity}.setRotation(${opt.toFloat(input$yaw)}, ${opt.toFloat(input$pitch)});

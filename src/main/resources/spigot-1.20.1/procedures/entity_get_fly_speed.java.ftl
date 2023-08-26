@@ -1,0 +1,1 @@
+/*@float*/(${input$entity} instanceof Player _plr ? _plr.getFlySpeed():0)

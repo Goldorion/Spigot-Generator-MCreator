@@ -1,0 +1,1 @@
+(${input$entity} instanceof LivingEntity _le && _le.isSwimming())
