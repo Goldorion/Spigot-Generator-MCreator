@@ -12,6 +12,7 @@
 * Added support for the Return procedure block
 * Greatly improved the generated code
 * [Bugfix] Fix some procedure blocks causing build errors
+* [Bugfix] Several minor fixes and changes
 
 ## 0.9.0
 * Updated to Minecraft 1.19

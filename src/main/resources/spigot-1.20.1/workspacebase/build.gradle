@@ -50,6 +50,8 @@ task buildLatestSpigot(type: Download)  {
 
 
 task runSpigotServer (dependsOn: build) {
+	dependsOn build
+
 	doLast {
 		copy {
 			from file('build/libs/plugin.jar')

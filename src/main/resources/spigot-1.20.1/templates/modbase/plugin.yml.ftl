@@ -12,6 +12,6 @@ api-version: 1.20
 
 commands:
   <#list w.getElementsOfType("command") as command>
-  ${command.getModElement().getRegistryName()}:
-	permission: ${command.getModElement().getRegistryName()}.use
+  ${command.getGeneratableElement().commandName}:
+    permission: ${command.getGeneratableElement().commandName}.use
   </#list>
