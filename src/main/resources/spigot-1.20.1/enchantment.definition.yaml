@@ -1,0 +1,9 @@
+templates:
+  - template: enchantment.java.ftl
+    name: "@SRCROOT/@BASEPACKAGEPATH/enchantment/@NAMEEnchantment.java"
+
+global_templates:
+  - template: elementinits/enchantments.java.ftl
+    name: "@SRCROOT/@BASEPACKAGEPATH/init/@JavaModNameEnchantments.java"
+
+field_exclusions: [rarity, damageModifier, isAllowedOnBooks, canGenerateInLootTables, canVillagerTrade]

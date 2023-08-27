@@ -26,6 +26,7 @@ public class ${JavaModName} extends JavaPlugin {
 	    plugin = this;
 		server = this.getServer();
 
+		<#if w.hasElementsOfType("enchantment")>${JavaModName}Enchantments.register();</#if>
 		<#if w.hasElementsOfType("command")>${JavaModName}Commands.register(this);</#if>
 		<#if w.hasElementsOfType("procedure")>${JavaModName}Procedures.register(this);</#if>
 	}
