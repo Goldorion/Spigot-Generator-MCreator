@@ -1,6 +1,6 @@
 name: Minecraft Spigot for @minecraft
-status: dev
-buildfileversion: 0.9.0
+status: stable
+buildfileversion: 1.0
 subversion: 1
 
 gradle:
