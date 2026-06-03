@@ -1,6 +1,4 @@
-# Spigot Generator for MCreator
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F1F7EKDC0)
+# Spigot Generator for MCreator [FORK FROM GOLDORION]
 
 An unofficial plugin for [MCreator](https://mcreator.net/), a code generator for Minecraft. This plugin adds a [Spigot](https://www.spigotmc.org/) generator.
 
