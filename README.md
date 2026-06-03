@@ -18,6 +18,7 @@ This project is not official. It is not affiliated with the respective owners an
 ## Credits/License
 Dev - [Goldorion](https://github.com/Goldorion)
 Contributors (previous Minecraft versions) - Klemen
+Fork dev - [NetheriteGroup](https://github.com/NetheriteGroup)
 
 The plugin's MCreator page is [here](https://mcreator.net/plugin/64516/mcreator-spigot-generator).
 The plugin's MCreator forum page is [here](https://mcreator.net/forum/64143/spigot-generator-plugin).
