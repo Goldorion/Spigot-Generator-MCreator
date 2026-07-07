@@ -1,7 +1,7 @@
 {
   "id": "generator-spigot-${version}",
   "supportedversions": [
-    2026001
+    2026002
   ],
   "info": {
     "name": "Minecraft Spigot ${version} Generator",

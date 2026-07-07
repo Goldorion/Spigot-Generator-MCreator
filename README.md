@@ -6,14 +6,14 @@ An unofficial plugin for [MCreator](https://mcreator.net/), a code generator for
 
 This project is not official. It is not affiliated with the respective owners and maintainers of Spigot/Bukkit, Minecraft, or MCreator. Do not expect any official support from their communities.
 
-**The current targeted Minecraft version is 1.21.8.**
+**The current targeted Minecraft version is 26.1.2.**
 
 ## Features
 * Commands (Old system only)
 * Procedures (Partial support)
 
 ## Information
-- Make sure you use MCreator 2025.3
+- Make sure you use MCreator 2026.2
 - Back up your workspace before updating to a newer version of the plugin.
 - Plugins also require [Spigot](https://getbukkit.org/download/spigot) to function properly.
 - 

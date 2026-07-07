@@ -1,6 +1,10 @@
 # Changelog
 
-# 1.1.2
+## 1.2
+- Updated to MCreator 2026.2
+- Updated to Spigot 26.1.2
+
+## 1.1.2
 - Updated to MCreator 2026.1 (2026.1.13616)
 
 ## 1.1.1

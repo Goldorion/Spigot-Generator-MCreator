@@ -1,8 +1,9 @@
 {
-  "generator-spigot-1.21.8": {
-    "latest": "1.1.2",
+  "generator-spigot-26.1.2": {
+    "latest": "1.2",
     "changes": [
-      "Updated to MCreator 2026.1 (2026.1.13616)"
+      "Updated to MCreator 2026.2)",
+      "Updated to Spigot 26.1.2"
     ]
   }
 }

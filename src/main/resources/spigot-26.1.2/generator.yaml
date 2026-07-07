@@ -4,7 +4,7 @@ buildfileversion: 1.1
 subversion: 6
 
 import:
-  - datapack-1.21.8:
+  - datapack-26.1.2:
     exclude:
       - features
       - jsontriggers

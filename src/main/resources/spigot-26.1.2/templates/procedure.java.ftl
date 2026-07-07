@@ -17,7 +17,7 @@
 <#-- @formatter:off -->
 package ${package}.procedures;
 
-import javax.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 <#assign nullableDependencies = []/>
 <#list dependencies as dependency>

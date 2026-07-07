@@ -4,7 +4,7 @@ plugins {
     id "java"
 }
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 
 tasks.processResources {
     filesMatching('plugin.json') {
@@ -20,7 +20,7 @@ tasks.jar {
 }
 
 class Globals {
-    private static final def ARCHIVE_NAME = "generator-spigot-1.21.8" // The name of the exported file
+    private static final def ARCHIVE_NAME = "generator-spigot-26.1.2" // The name of the exported file
 
     // You can change the root folder of your OS if you have a custom installation
     public static final def MCREATOR_ROOT_FOLDER_WINDOWS = "C:/Program Files/Pylo/MCreator" // Default path on Windows

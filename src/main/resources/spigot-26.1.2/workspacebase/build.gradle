@@ -8,7 +8,7 @@ def toolsDir = layout.projectDirectory.dir("build/tools")
 def runDir = layout.projectDirectory.dir("run")
 def pluginsDir = runDir.dir("plugins")
 def buildToolsJar = toolsDir.file("BuildTools.jar")
-def spigotJar = runDir.file("spigot-1.21.8.jar")
+def spigotJar = runDir.file("spigot-26.1.2.jar")
 
 repositories {
 	mavenCentral()
@@ -23,7 +23,7 @@ repositories {
 }
 
 dependencies {
-	compileOnly "org.spigotmc:spigot-api:1.21.8-R0.1-SNAPSHOT"
+	compileOnly "org.spigotmc:spigot-api:26.1.2-R0.1-SNAPSHOT"
 }
 
 
@@ -65,7 +65,7 @@ tasks.register('buildSpigot', Exec) {
 	dependsOn tasks.downloadBuildTools
 
 	workingDir = runDir.asFile
-	commandLine = ["java", "-jar", buildToolsJar.asFile.absolutePath, "--rev", "1.21.8"]
+	commandLine = ["java", "-jar", buildToolsJar.asFile.absolutePath, "--rev", "26.1.2"]
 	onlyIf { !spigotJar.asFile.exists() }
 }
 
